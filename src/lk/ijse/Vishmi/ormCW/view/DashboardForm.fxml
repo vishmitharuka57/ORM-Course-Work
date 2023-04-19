@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1236.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Vishmi.ormCW.controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutY="-7.0" prefHeight="707.0" prefWidth="262.0" style="-fx-background-color: #46ACC7;">
+         <children>
+            <Button layoutX="15.0" layoutY="236.0" mnemonicParsing="false" onAction="#createRegistrationOnAction" prefHeight="48.0" prefWidth="235.0" text="Create Registration">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="306.0" mnemonicParsing="false" onAction="#studentManagerOnAction" prefHeight="48.0" prefWidth="235.0" text="Student Management">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="380.0" mnemonicParsing="false" onAction="#RoomManagementOnAction" prefHeight="48.0" prefWidth="235.0" text="Room Management">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="460.0" mnemonicParsing="false" onAction="#PaymentManagementOnAction" prefHeight="48.0" prefWidth="235.0" text="Payment Management">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="530.0" mnemonicParsing="false" onAction="#UsermanagementOnAction" prefHeight="48.0" prefWidth="235.0" text="User Management">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="184.0" fitWidth="278.0" layoutX="39.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="508.0" fitWidth="927.0" layoutX="273.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/istockphoto-1296795108-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="461.0" layoutY="42.0" prefHeight="90.0" prefWidth="695.0" style="-fx-border-radius: 75%;" text="Welcome to D24 Hostel">
+         <font>
+            <Font name="System Bold Italic" size="62.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#402f3f" offset="0.2620373661966262" />
+                  <Stop color="#5d646b" offset="0.4501718213058415" />
+                  <Stop color="#574d5b" offset="0.6963700280443968" />
+                  <Stop color="#03101e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane fx:id="dashPane" layoutX="263.0" layoutY="-2.0" prefHeight="700.0" prefWidth="971.0" />
+   </children>
+</AnchorPane>

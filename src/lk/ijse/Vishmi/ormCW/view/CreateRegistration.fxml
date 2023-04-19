@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="695.0" prefWidth="944.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Vishmi.ormCW.controller.CreateRegistrationController">
+   <children>
+      <ImageView fitHeight="698.0" fitWidth="1038.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/istockphoto-1197124778-170667a.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="#aeaeae" layoutX="66.0" layoutY="58.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="45.0" layoutY="34.0" text="D">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="39.0" text="24">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="33.0" prefHeight="39.0" prefWidth="262.0" text="Hostel D24 - Colombo">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="646.0" layoutY="33.0" prefHeight="39.0" prefWidth="315.0" text="Create Registration " textFill="#0a0b5e" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="298.0" layoutY="220.0" prefHeight="454.0" prefWidth="589.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="txtRegId" layoutX="171.0" layoutY="37.0" prefHeight="26.0" prefWidth="357.0" />
+            <Label layoutX="38.0" layoutY="42.0" prefHeight="26.0" prefWidth="107.0" text="Reg Id :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStdId" layoutX="171.0" layoutY="87.0" prefHeight="26.0" prefWidth="357.0" />
+            <Label layoutX="38.0" layoutY="85.0" prefHeight="26.0" prefWidth="107.0" text="Student Id :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="171.0" layoutY="137.0" prefHeight="26.0" prefWidth="357.0" />
+            <Label layoutX="35.0" layoutY="190.0" prefHeight="26.0" prefWidth="131.0" text="Campus Name :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCampusName" layoutX="171.0" layoutY="187.0" prefHeight="26.0" prefWidth="357.0" />
+            <Label layoutX="37.0" layoutY="282.0" prefHeight="26.0" prefWidth="123.0" text="Gender :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDuration" layoutX="171.0" layoutY="237.0" prefHeight="26.0" prefWidth="357.0" />
+            <Label layoutX="36.0" layoutY="237.0" prefHeight="26.0" prefWidth="107.0" text="Duration :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="406.0" layoutY="392.0" mnemonicParsing="false" onAction="#proceedOnAction" prefHeight="36.0" prefWidth="167.0" style="-fx-background-color: #17D7A0;" text="Proceed" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtGender" layoutX="171.0" layoutY="282.0" prefHeight="26.0" prefWidth="357.0" />
+            <Label layoutX="38.0" layoutY="138.0" prefHeight="26.0" prefWidth="107.0" text="Full Name :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="322.0" prefHeight="26.0" prefWidth="123.0" text="Room Id:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtRoomId" layoutX="172.0" layoutY="322.0" prefHeight="26.0" prefWidth="357.0" />
+            <Label layoutX="38.0" layoutY="362.0" prefHeight="26.0" prefWidth="123.0" text="Contact :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtContact" layoutX="172.0" layoutY="362.0" prefHeight="26.0" prefWidth="357.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="346.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="38.0" prefWidth="215.0" style="-fx-background-color: #56BBF1;" text="Search for Rooms" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="txtAvailability" layoutX="593.0" layoutY="153.0" prefHeight="39.0" prefWidth="289.0" text="Available/Not" />
+   </children>
+</AnchorPane>
